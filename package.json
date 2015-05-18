@@ -1,5 +1,5 @@
 {
-  "author": "Rob Crocombe, Edward Hotchkiss",
+  "author": "Rob Crocombe",
   "name": "mongo-pages",
   "description": "Mongoose ORM (Node.js/MongoDB) Document Query Pagination",
   "version": "4.0.0",
