@@ -1,14 +1,16 @@
 
-# mongoose-paginate [![Build Status](https://secure.travis-ci.org/edwardhotchkiss/mongoose-paginate.png)](http://travis-ci.org/edwardhotchkiss/mongoose-paginate) [![Git Tip](http://img.shields.io/gittip/edwardhotchkiss.svg)](https://www.gittip.com/edwardhotchkiss/)
+# mongo-pages
 
 > Mongoose ORM (NodeJS/MongoDB) Document Query Pagination
+
+This is a fork of Edward Hotchkiss's [mongoose-paginate](https://github.com/edwardhotchkiss/mongoose-paginate) package, with some additions needed for the [CS Blogs](https://github.com/csblogs) project.
 
 To be used in combination with view pagination middleware such as [express-paginate](https://github.com/niftylettuce/express-paginate).
 
 ## Installation
 
 ```bash
-npm install -S mongoose-paginate
+npm install -S mongo-pages
 ```
 
 ## Usage
@@ -63,12 +65,6 @@ MyModel.paginate({}, 2, 10, function(error, pageCount, paginatedResults, itemCou
 
 ```
 
-## Run Tests
-
-``` bash
-$ npm test
-```
-
 ### Author: [Edward Hotchkiss][0]
 
 [0]: http://edwardhotchkiss.com/
@@ -76,7 +72,6 @@ $ npm test
 
 ### Contributors
 
+* [Rob Crocombe](https://github.com/robcrocombe)
 * [Nick Baugh](https://github.com/niftylettuce)
-
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/edwardhotchkiss/mongoose-paginate/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
