@@ -20,14 +20,14 @@ npm install -S mongo-pages
 ```js
 
 /*
- * basic example usage of `mongoose-pagination`
+ * basic example usage of `mongo-pages`
  * querying for `all` {} items in `MyModel`
  * paginating by second page, 10 items per page (10 results, page 2)
  */
 
-var mongoosePaginate = require('mongoose-paginate');
+var mongoPages = require('mongo-pages');
 
-MyModel.plugin(mongoosePaginate)
+MyModel.plugin(mongoPages);
 
 MyModel.paginate({}, {
     page: 2,
@@ -48,14 +48,14 @@ MyModel.paginate({}, {
 ```js
 
 /*
- * advanced example usage of `mongoose-pagination`
+ * advanced example usage of `mongo-pages`
  * querying for `{ columns: 'title', { populate: 'some_ref' }, { sortBy : { title : -1 } }` items in `MyModel`
  * paginating by second page, 10 items per page (10 results, page 2)
  */
 
-var mongoosePaginate = require('mongoose-paginate');
+var mongoPages = require('mongo-pages');
 
-MyModel.plugin(mongoosePaginate)
+MyModel.plugin(mongoPages);
 
 MyModel.paginate({}, {
     page: 2,
