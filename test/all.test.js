@@ -265,6 +265,7 @@ vows.describe('pagination module basic tests')
         },
         teardown: function() {
             mongoose.connection.db.dropDatabase();
+            mongoose.connection.close();
         }
     }
 })
