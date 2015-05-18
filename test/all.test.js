@@ -262,10 +262,6 @@ vows.describe('pagination module basic tests')
         'there should be no errors and resultCount should be a number': function(error, resultCount) {
             assert.equal(error, null);
             assert.equal(resultCount, 100);
-        },
-        teardown: function() {
-            mongoose.connection.db.dropDatabase();
-            mongoose.connection.close();
         }
     }
 })
