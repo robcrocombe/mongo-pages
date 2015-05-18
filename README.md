@@ -1,5 +1,5 @@
 
-# mongo-pages
+# mongo-pages [![Build Status](https://travis-ci.org/robcrocombe/mongo-pages.svg?branch=master)](https://travis-ci.org/robcrocombe/mongo-pages)
 
 > Mongoose ORM (NodeJS/MongoDB) Document Query Pagination
 
