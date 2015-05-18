@@ -2,7 +2,7 @@
   "author": "Rob Crocombe",
   "name": "mongo-pages",
   "description": "Mongoose ORM (Node.js/MongoDB) Document Query Pagination",
-  "version": "4.0.0",
+  "version": "4.0.1",
   "contributors": [
     {
       "name": "Edward Hotchkiss",
