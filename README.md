@@ -32,12 +32,12 @@ MyModel.plugin(mongoPages);
 MyModel.paginate({}, {
     page: 2,
     limit: 10
-    }, function(error, results) {
+    }, function(error, page) {
       if (error) {
         console.error(error);
       } else {
-        console.log('Pages:', results.pageCount);
-        console.log(results.paginatedResults);
+        console.log('Pages:', page.pageCount);
+        console.log(page.results);
       }
 });
 
@@ -63,12 +63,12 @@ MyModel.paginate({}, {
     columns: 'title',
     populate: 'some_ref',
     sortBy: { title : -1 }
-    }, function(error, results) {
+    }, function(error, page) {
       if (error) {
         console.error(error);
       } else {
-        console.log('Pages:', results.pageCount);
-        console.log(results.paginatedResults);
+        console.log('Pages:', page.pageCount);
+        console.log(page.results);
       }
 });
 
